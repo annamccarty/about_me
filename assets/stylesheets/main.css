@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.col-15,
+.col-85 {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+
+
+.col-15 {
+  width: 14.99%;
+}
+.col-85 {
+  width: 84.99%;
+}
+
+
+.grid,
+.col-15,
+.col-85 {
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  color: #7E7E7E;
+  font: 400 16px/22px "Roboto", Arial, sans-serif;
+}
+
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+
+.header {
+  margin-top: 40px;
+  font-size: 24px;
+  color: #091f42;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #091f42;
+  font-size: 18px;
+}
+
+hr {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+li {
+  list-style: square;
+  margin: 15px 0 15px 15px;
+}
+
+li:first-child {
+  margin: 0 0 15px 15px;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer small {
+  float: left;
+
+}
+
+.primary-footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #7E7E7E;
+  margin: 0 0 0 10px;
+}
+
+
+
+.primary-footer a:hover {
+  color: #999999;
+}
+
+.primary-footer {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-weight:300;
+  font-size: 14px;
+}
+/*
+  ========================================
+  Primary nav
+  ========================================
+*/
+
+.primary-nav {
+  width: 100%;
+  height: 80px;
+  background-color: #091f42;
+}
+
+
+.primary-nav a {
+  color: #FFFFFF;
+  float: right;
+  margin: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 80px;
+}
+
+.nav {
+  text-align: right;
+}
+
+.primary-nav a:hover {
+  color: #ECECEC;
+}
+
+/*
+  ========================================
+  Hero
+  ========================================
+*/
+
+.hero {
+  height: 400px;
+  background-image: url(../images/hero-image.jpg);
+  background-size: cover;
+}
+
+
+.hero-box {
+  background: rgba(20, 49, 96, 0.3);
+  width: 70%;
+  height: 300px;
+  border-radius: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  color: #FFFFFF;
+
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.hero h1 {
+  font-size: 300px;
+  font-family: "Yesteryear", Arial, sans-serif;
+
+}
+
+.intro p {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/*
+  ========================================
+  Contact Page
+  ========================================
+*/
+
+.contact {
+
+  float: left;
+  margin: 0 1.5%;
+  width: 48%;
+}
+
+
+
+.contact p {
+  margin-bottom: 0;
+}
+
+aside: {
+  float: right;
+    margin: 0 1.5%;
+    width: 48.5%;
+
+}
+
+
+label, input {
+  float: right;
+
+}
+
+input {
+  margin: 10px 0;
+  width: 400px;
+  height: 25px;
+}
+
+.btn {
+  border-style: solid;
+  border-size: 1px;
+  border-color: #7E7E7E;
+  border-radius: 5px;
+  background-color: white;
+  padding: 2px ;
+  width: 100px;
+}
+.comment-box {
+  width: 400px;
+  height: 200px;
+  margin-top: 10px;
+  float: right;
+}
+
+.crop {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+img {
+  width: 160px;
+  position: relative;
+  right: 5;
+
+}
+
+/*
+  ========================================
+  Background Page
+  ========================================
+*/
+.icon {
+
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+}
